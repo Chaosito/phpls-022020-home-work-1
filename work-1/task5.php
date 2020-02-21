@@ -7,7 +7,7 @@
 
     print "CAR name<br>model speed doors year<br><br>";
 
-    foreach($cars AS $k => $v){
-        print "CAR {$k}<br>";
-        print implode(" ", $v)."<br><br>";
+    foreach($cars AS $key => $value){
+        print "CAR {$key}<br>";
+        print implode(" ", $value)."<br><br>";
     }
