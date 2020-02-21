@@ -1,11 +1,15 @@
 <?php
+    const AGE_GRAD_1 = 1;
+    const AGE_GRAD_18 = 18;
+    const AGE_GRAD_65 = 65;
+
     $age = 33;
 
-    if ($age >= 18 && $age <= 65) {
+    if ($age >= AGE_GRAD_18 && $age <= AGE_GRAD_65) {
         echo "Вам еще работать и работать";
-    } elseif ($age > 65) {
+    } elseif ($age > AGE_GRAD_65) {
         echo "Вам пора на пенсию";
-    } elseif ($age >= 1 && $age <= 17) {
+    } elseif ($age >= AGE_GRAD_1 && $age < AGE_GRAD_18) {
         echo "Вам ещё рано работать";
     } else {
         echo "Неизвестный возраст";
